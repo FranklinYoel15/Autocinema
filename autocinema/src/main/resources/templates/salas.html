@@ -173,6 +173,7 @@
         </thead>
         <tbody>
         <tr th:each="s : ${listaSala}">
+            <td th:text="${s.id}">Sala A</td>
             <td th:text="${s.nombre}">Sala A</td>
             <td th:text="${s.capacidad}">100</td>
             <td th:text="${s.sede_id}">1</td>

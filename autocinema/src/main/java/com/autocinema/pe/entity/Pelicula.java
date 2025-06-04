@@ -113,7 +113,7 @@ public class Pelicula {
 		return "Pelicula [id=" + id + ", titulo=" + titulo + ", descripcion=" + descripcion + ", duracion=" + duracion
 				+ ", categoria=" + categoria + ", imagen=" + imagen + "]";
 	}
-	
-	
+
+
 
 }

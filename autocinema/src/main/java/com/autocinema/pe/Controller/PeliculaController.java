@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 import com.autocinema.pe.entity.Categoria;
 import com.autocinema.pe.entity.Pelicula;
 import com.autocinema.pe.repository.CategoriaRepository;
@@ -43,7 +44,7 @@ public class PeliculaController {
 
 	    @PostMapping("/guardar")
 	    public String guardarPelicula(@ModelAttribute Pelicula pelicula) {
-	       
+
 	        String nombreCategoria = pelicula.getCategoria();
 	        Categoria categoria = categoriaRepository.findByNombre(nombreCategoria);
 

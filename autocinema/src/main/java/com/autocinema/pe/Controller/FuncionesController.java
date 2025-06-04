@@ -58,6 +58,8 @@ public class FuncionesController {
 
 	        model.addAttribute("funciones", new Funciones());
 	        model.addAttribute("listaFunciones", funciones);
+	        model.addAttribute("listaPelicula", peliculaService.listarPelicula());
+	        model.addAttribute("listaSala", salaService.listarSala());
 	        return "funciones";
 	    }
 

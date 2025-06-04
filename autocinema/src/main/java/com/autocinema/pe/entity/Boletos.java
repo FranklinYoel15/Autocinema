@@ -20,16 +20,22 @@ public class Boletos {
 
 	    @Column(name = "id")
 	    private Long id;
-	    @Column(name = "nombre")
+	    
+	    @Column(name = "usuario_id")
 	    private Integer usuario;
+	    
 	    @Column(name = "funcion_id")
 	    private Integer funcion;
+	    
 	    @Column(name = "cantidad")
 	    private Integer cantidad;
+	    
 	    @Column(name = "total")
 	    private Double total;
+	    
 	    @Column(name = "metodo_pago_id")
 	    private Integer metodoP;
+	    
 		@Column(name = "fecha_compra")
 		@DateTimeFormat(pattern = "yyyy-MM-dd")
 		private Date fecha;
